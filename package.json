@@ -2,6 +2,10 @@
   "name": "riode-react",
   "version": "1.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
+  
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -51,4 +55,5 @@
     "sass": "^1.42.1",
     "supports-color": "^9.0.2"
   }
+
 }
