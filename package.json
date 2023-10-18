@@ -3,9 +3,9 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next --openssl-legacy-provider",
+    "build": "next build --openssl-legacy-provider",
+    "start": "next start --openssl-legacy-provider"
   },
   "dependencies": {
     "@apollo/client": "^3.4.16",
