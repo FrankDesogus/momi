@@ -477,7 +477,7 @@ function Checkout(props) {
     onClick: () => {
       !isFirst && setFirst(!isFirst);
     }
-  }, "Check payments")), __jsx((react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default()), {
+  }, "Check payments")), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Collapse, {
     in: isFirst
   }, __jsx("div", {
     className: "card-wrapper"
@@ -491,7 +491,7 @@ function Checkout(props) {
     onClick: () => {
       isFirst && setFirst(!isFirst);
     }
-  }, "Cash on delivery")), __jsx((react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default()), {
+  }, "Cash on delivery")), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Collapse, {
     in: !isFirst
   }, __jsx("div", {
     className: "card-wrapper"

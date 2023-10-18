@@ -21,7 +21,6 @@ var external_react_ = __webpack_require__(9297);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 // EXTERNAL MODULE: external "react-bootstrap"
 var external_react_bootstrap_ = __webpack_require__(9226);
-var external_react_bootstrap_default = /*#__PURE__*/__webpack_require__.n(external_react_bootstrap_);
 // EXTERNAL MODULE: ./components/features/custom-link.jsx
 var custom_link = __webpack_require__(8765);
 // EXTERNAL MODULE: ./components/features/countdown.jsx
@@ -531,7 +530,7 @@ function DetailOne(props) {
     className: `size ${curSize === item.name ? 'active' : ''} ${isDisabled(curColor, item.name) ? 'disabled' : ''}`,
     key: "size-" + item.name,
     onClick: e => toggleSizeHandler(item)
-  }, item.value))), detail_three_jsx((external_react_bootstrap_default()), {
+  }, item.value))), detail_three_jsx(external_react_bootstrap_.Collapse, {
     in: 'null' !== curColor || 'null' !== curSize
   }, detail_three_jsx("div", {
     className: "card-wrapper overflow-hidden reset-value-button w-100 mb-0"
@@ -541,7 +540,7 @@ function DetailOne(props) {
     onClick: resetValueHandler
   }, "Clean All"))))) : '', detail_three_jsx("div", {
     className: "product-variation-price"
-  }, detail_three_jsx((external_react_bootstrap_default()), {
+  }, detail_three_jsx(external_react_bootstrap_.Collapse, {
     in: cartActive && curIndex > -1
   }, detail_three_jsx("div", {
     className: "card-wrapper"

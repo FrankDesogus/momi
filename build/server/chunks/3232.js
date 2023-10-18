@@ -290,7 +290,7 @@ function DetailOne(props) {
   }, "Choose an option"), sizes.map(item => !isDisabled(curColor, item.name) ? __jsx("option", {
     value: item.name,
     key: "size-" + item.name
-  }, item.name) : ''))), __jsx((react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default()), {
+  }, item.name) : ''))), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Collapse, {
     in: 'null' !== curColor || 'null' !== curSize
   }, __jsx("div", {
     className: "card-wrapper overflow-hidden reset-value-button w-100 mb-0"
@@ -300,7 +300,7 @@ function DetailOne(props) {
     onClick: resetValueHandler
   }, "Clean All"))))) : "", __jsx("div", {
     className: "product-variation-price"
-  }, __jsx((react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default()), {
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Collapse, {
     in: cartActive && curIndex > -1
   }, __jsx("div", {
     className: "card-wrapper"

@@ -112,7 +112,6 @@ function DetailLeft(props) {
 var external_react_redux_ = __webpack_require__(79);
 // EXTERNAL MODULE: external "react-bootstrap"
 var external_react_bootstrap_ = __webpack_require__(9226);
-var external_react_bootstrap_default = /*#__PURE__*/__webpack_require__.n(external_react_bootstrap_);
 // EXTERNAL MODULE: ./store/wishlist.js
 var wishlist = __webpack_require__(5708);
 // EXTERNAL MODULE: ./store/cart.js + 1 modules
@@ -327,7 +326,7 @@ function DetailRight(props) {
   }, "Choose an option"), sizes.map(item => !isDisabled(curColor, item.name) ? detail_right_jsx("option", {
     value: item.name,
     key: "size-" + item.name
-  }, item.name) : ''))), detail_right_jsx((external_react_bootstrap_default()), {
+  }, item.name) : ''))), detail_right_jsx(external_react_bootstrap_.Collapse, {
     in: 'null' !== curColor || 'null' !== curSize
   }, detail_right_jsx("div", {
     className: "card-wrapper overflow-hidden reset-value-button w-100 mb-0"
@@ -337,7 +336,7 @@ function DetailRight(props) {
     onClick: resetValueHandler
   }, "Clean All"))))) : "", detail_right_jsx("div", {
     className: "product-variation-price"
-  }, detail_right_jsx((external_react_bootstrap_default()), {
+  }, detail_right_jsx(external_react_bootstrap_.Collapse, {
     in: cartActive && curIndex > -1
   }, detail_right_jsx("div", {
     className: "card-wrapper"

@@ -119,7 +119,6 @@ function MediaFour(props) {
 var external_react_redux_ = __webpack_require__(79);
 // EXTERNAL MODULE: external "react-bootstrap"
 var external_react_bootstrap_ = __webpack_require__(9226);
-var external_react_bootstrap_default = /*#__PURE__*/__webpack_require__.n(external_react_bootstrap_);
 // EXTERNAL MODULE: ./components/features/countdown.jsx
 var countdown = __webpack_require__(7845);
 // EXTERNAL MODULE: ./components/features/quantity.jsx
@@ -394,7 +393,7 @@ function DetailFour(props) {
     className: `size ${curSize === item.name ? 'active' : ''} ${isDisabled(curColor, item.name) ? 'disabled' : ''}`,
     key: "size-" + item.name,
     onClick: e => toggleSizeHandler(item)
-  }, item.value))), detail_four_jsx((external_react_bootstrap_default()), {
+  }, item.value))), detail_four_jsx(external_react_bootstrap_.Collapse, {
     in: 'null' !== curColor || 'null' !== curSize
   }, detail_four_jsx("div", {
     className: "card-wrapper overflow-hidden reset-value-button w-100 mb-0"
@@ -404,7 +403,7 @@ function DetailFour(props) {
     onClick: resetValueHandler
   }, "Clean All"))))) : '', detail_four_jsx("div", {
     className: "product-variation-price"
-  }, detail_four_jsx((external_react_bootstrap_default()), {
+  }, detail_four_jsx(external_react_bootstrap_.Collapse, {
     in: cartActive && curIndex > -1
   }, detail_four_jsx("div", {
     className: "card-wrapper"
